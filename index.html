@@ -1,0 +1,157 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>맛집 리스트</title>
+  <style>
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 2rem;
+    }
+    ul{list-style: none;}
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .brunch_section {
+      margin-bottom: 3rem;
+    }
+
+    .brunch_section h2 {
+      font-size: 1.5rem;
+      color: #444;
+      border-left: 4px solid #ff6b6b;
+      padding-left: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .brunch_items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .brunch_card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      padding: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .brunch_card:hover {
+      transform: translateY(-5px);
+    }
+
+    .brunch_card a {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #2d3436;
+      text-decoration: none;
+    }
+
+    .brunch_card p {
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    figure {
+      display: flex;
+      justify-content:space-between;
+
+    }
+    figure img {width: 180px;height: 180px;}
+    @media (max-width: 717px) {
+      figure {
+        flex-direction:column;
+
+      }
+      figure img {
+        margin: 10px auto;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <figure>
+    <img src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=https://t1.daumcdn.net/brunch/service/user/cnoC/image/hHg97SJeyrfrZAfXYIqwSJAsvC8" alt="">
+    <img src="https://i.namu.wiki/i/YWLbg882cQ7U8x5HFx__WAaXYGy3yLETS9OmDJw3QTwmoZnmPxVk5gFu_xRpg8R3hLo9PUnGpgVkW3XKsVHjOg.gif" alt="">
+    <img
+     src="https://i.namu.wiki/i/-nHeh9dkfWQPL40idYcllYzPtdRPEfacqpZYdlWaP0Mn8lICffHpK4vXLsN-OdfxnhoZOd8mxwEZskFQjIQ_nw.webp" alt="">
+  </figure>
+  <h1>
+    맛집 리스트
+  </h1>
+  
+  <section class="brunch_section">
+    <h2>보라매공원</h2>
+    <ul class="brunch_items">
+      <li class="brunch_card">
+        <a href="https://naver.me/Fw7im0ES" target="_blank">로드파스타피자(일요일 갈 곳)
+          <p>보라매역 2번 출구에서 289m</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="brunch_section">
+    <h2>문래</h2>
+    <ul class="brunch_items">
+      <li class="brunch_card">
+        <a href="https://map.naver.com/p/search/라크라센타/place/38463917" target="_blank">라크라센타
+          <p>문래역 3번 출구에서 296m</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="brunch_section">
+    <h2>구디</h2>
+    <ul class="brunch_items">
+      <li class="brunch_card">
+        <a href="https://map.naver.com/p/entry/place/19820966" target="_blank">메이비카페
+          <p>구로디지털단지역 2번 출구에서 77m</p>
+        </a>
+      </li>
+      <li class="brunch_card">
+        <a href="https://naver.me/5PVaU9ch" target="_blank">말뚝곱창
+          <p>구로디지털단지역 6번 출구에서 152m</p>
+        </a>
+      </li>
+    </ul>  
+  </section>
+
+  <section class="brunch_section">
+    <h2>신대방</h2>
+    <ul class="brunch_items">
+      <li class="brunch_card">
+        <a href="https://map.naver.com/p/entry/place/1991354117" target="_blank">NOSH
+          <p>신대방역 2번 출구에서 316m</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="brunch_section">
+    <h2>신림</h2>
+    <ul class="brunch_items">
+      <li class="brunch_card">
+        <a href="https://map.naver.com/p/entry/place/1102802134" target="_blank">버딩
+          <p>신림당곡역 2번 출구에서 392m</p>
+        </a>        
+      </li>
+    </ul>
+  </section>
+</body>
+</html>
